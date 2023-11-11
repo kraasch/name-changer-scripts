@@ -9,3 +9,4 @@ hub_update:
 	@hub_ctrl ${HUB_MODE} ln "$(realpath ./src/names_current+format)"
 	@hub_ctrl ${HUB_MODE} ln "$(realpath ./src/names_format)"
 	@hub_ctrl ${HUB_MODE} ln "${HOME}/.local/bin/names_creationDate+format" "${HOME}/.local/bin/names"  
+	@hub_ctrl ${HUB_MODE} ln "$(realpath ./src/rename_num.py)" "${HOME}/.local/bin/rename_numbering"  
