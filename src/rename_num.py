@@ -16,7 +16,7 @@ def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
 dir=sys.argv[1]
 prefix=id_generator()
 
-def rename_all(prefix):
+def rename_all(prefix=''):
     index=0
     for file in sorted(pathlib.Path(dir).iterdir()):
         index = index + 1
