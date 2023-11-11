@@ -14,10 +14,10 @@ def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
 
 dir=sys.argv[1]
-index=0
 prefix=id_generator()
 
 def rename_all(prefix):
+    index=0
     for file in sorted(pathlib.Path(dir).iterdir()):
         index = index + 1
         suffix = pathlib.Path(file).suffix
