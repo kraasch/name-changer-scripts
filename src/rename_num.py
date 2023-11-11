@@ -3,6 +3,8 @@
 import sys
 import os
 import pathlib
+import string
+import random
 
 if not len(sys.argv) == 2:
     print('provide a directory')
